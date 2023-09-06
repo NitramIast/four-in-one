@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .img-box{
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body position-fixed z-1 w-100"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">CyberPunk2077</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card-section">Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#img-box">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assest/1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./assest/1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="./assest/1.png" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container card-section d-flex justify-content-around pt-3 flex-wrap" id="card-section">
+        <div class="card m-3" style="width: 20rem">
+            <img src="./assest/2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem">
+            <img src="./assest/2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem">
+            <img src="./assest/2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="img-box">
+        <h3>This is my dream car G-Car</h3>
+        <div class="grid text-center">
+            <div class="g-col-6">
+                <div class="grid text-center" style="--bs-rows: 2; --bs-columns: 2;">
+                    <div class="bg-black img-box">
+                        <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt="">
+                    </div>
+                    <div class="g-start-2 bg-black img-box" style="grid-row: 1">
+                    <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt=""></div>
+                    <div class="g-col-2 bg-black img-box" style="grid-row: 2">
+                    <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt=""></div>
+                </div>
+            </div>
+            <div class="g-col-6">
+                <div class="grid text-center" style="--bs-rows: 2; --bs-columns: 2;">
+                    <div class="g-col-2 bg-black img-box" style="grid-row: 1">
+                    <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt=""></div>
+                    <div class="g-start-1 bg-black img-box" style="grid-row: 2">
+                    <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt=""></div>
+                    <div class="g-start-2 bg-black img-box" style="grid-row: 2">
+                    <img src="./assest/6.png" class="card-img object-fit-cover w-100 h-100" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
