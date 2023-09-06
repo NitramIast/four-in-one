@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table{
+            position: absolute;
+            top: -3px;
+        }
+        tr{
+            width: 250px;
+            height: 150px;
+            background-color: rgb(178, 178, 210);
+        }
+        td{
+            width: 250px;
+        }
+        .dad{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+        }
+        .dad2{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son2{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: calc(50% - (50px / 2));
+            z-index: 5;
+        }
+        .dad3{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son3{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 50px);
+            z-index: 5;
+        }
+        .dad4{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son4{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: calc(50% - (50px / 2));
+            right: calc(0% - (50px / 2));
+            z-index: 5;
+        }
+        .dad5{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son5{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+        }
+
+        .dad6{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son6{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: calc(50% - (50px / 2));
+            left: calc(0% + (50px / 2));
+            z-index: 5;
+        }
+        .dad7{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son7{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: calc(50% - (50px / 2));
+            right: 0;
+            z-index: 5;
+        }
+        .dad8{
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+
+        .son8{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            bottom: calc(0% - (50px / 2));
+            z-index: 5;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="dad">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son"></div>
+    </div>
+    <div class="dad2">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son2"></div>
+    </div>
+    <div class="dad3">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son3"></div>
+    </div>
+    <div class="dad4">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son4"></div>
+    </div>
+    <div class="dad5">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son5"></div>
+    </div>
+    <div class="dad6">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son6"></div>
+    </div>
+    <div class="dad7">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son7"></div>
+    </div>
+    <div class="dad8">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="son8"></div>
+    </div>
+
+
+</body>
+</html>

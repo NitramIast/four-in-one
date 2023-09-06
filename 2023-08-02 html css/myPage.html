@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(180, 239, 239);
+        }
+
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(10, 26, 62);
+            position: fixed;
+            z-index: 99;
+        }
+        #navFloatRight{
+            width: 100%;
+            height: 80px;
+            position: relative;
+        }
+        
+        #facebook{
+            width: 50px;
+            height: 50px;
+            float: left;
+            position: absolute;
+            top: calc(50% - (50px / 2));
+            left: 50px;
+        }
+
+        .navBar{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 30px;
+            position: absolute;
+            right: 160px;
+            top: calc(50% - (50px / 2));
+        }
+
+        .navBar img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: calc(50% - (40px / 2));
+            left: calc(50% - (40px / 2));
+            border-radius: 50%;
+            
+        }
+        .navBar2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 30px;
+            position: absolute;
+            right: 80px;
+            top: calc(50% - (50px / 2));
+        }
+
+        .navBar2 img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: calc(50% - (40px / 2));
+            left: calc(50% - (40px / 2));
+            border-radius: 50%;
+            
+        }
+        .navBar3{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 30px;
+            position: absolute;
+            right: 0px;
+            top: calc(50% - (50px / 2));
+        }
+
+        .navBar3 img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: calc(50% - (40px / 2));
+            left: calc(50% - (40px / 2));
+            border-radius: 50%;
+            
+        }
+
+        #content{
+            width: 100%;
+            height: 3000px;
+            background-color: rgb(11, 11, 68);
+        }
+        
+        #banner{
+            width: 100%;
+            height: 800px;
+            background-color: rgb(31, 31, 106);
+            position: relative;
+            top: 80px;
+        }
+
+        #bannerImg{
+            width: 80%;
+            height: 520px;
+            background-image: url(./images/D2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            box-shadow: 0 0 2rem 1rem rgb(16, 16, 92);
+            border-radius: 15px;
+        }
+
+        #bannerPicture{
+            width: 120px;
+            height: 120px;
+            background-image: url(./images/picture.png);
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -90px;
+            left: 100px;
+        }
+
+        #bannerId{
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: -45px;
+            left: 250px;
+        }
+
+        #bannerInfo{
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 2px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: absolute;
+            bottom: -75px;
+            left: 250px;
+        }
+
+        #editBanner{
+            width: 160px;
+            height: 40px;
+            background: #ffffffc2;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        #editBanner img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top:calc(50% - 10px);
+            left: 15px;
+        }
+
+        #editBanner p{
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 10px);
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        #button{
+            width: 500px;
+            height: 40px;
+            position: absolute;
+            bottom: -25px;
+            right: 15px;
+        }
+
+        .editBtn{
+            width: 170px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 160px;
+        }
+
+        .editBtn2{
+            width: 170px;
+            height: 40px;
+            background-color: rgb(67, 125, 219);
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 340px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+        }
+
+        .editBtn img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top:calc(50% - 10px);
+            left: 15px;
+        }
+
+        .editBtn p{
+            position: absolute;
+            right: 10px;
+            color: #000;
+            top: calc(50% - 10px);
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div id="navFloatRight">
+            <img id="facebook" src="./images/facebook.png" alt="">
+            <div id="navRight">
+                <div class="navBar">
+                    <img src="./images/messenger.png" alt="">
+    
+                </div>
+                
+                <div class="navBar2">
+                    <img src="./images/bell.png" alt="">
+    
+                </div>
+                
+                <div class="navBar3">
+                    <img src="./images/picture.png" alt="">
+    
+                </div>
+
+            </div>
+            
+        </div>
+    </nav>
+
+    <div id="content">
+        <div id="banner">
+            <div id="bannerImg">
+                <div id="bannerPicture"></div>
+                <div id="bannerId">Earendel ch. 厄倫蒂兒</div>
+                <div id="bannerInfo">✧極深空計畫 Xtreme Deep Field Project✧</div>
+
+                <div id="editBanner">
+                    <img src="./images/photo-camera.png" alt="">
+                    <p>編輯封面照片</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="button">
+            <div class="editBtn2">
+                <p>+ 新增到限時動態</p>
+            </div>
+            <div class="editBtn">
+                <img src="./images/pen.png" alt="">
+                <p>編輯個人檔案</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

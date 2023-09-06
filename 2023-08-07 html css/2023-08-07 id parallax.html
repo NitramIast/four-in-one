@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 1200px;
+            background-color: blue;
+        }
+
+        #bottomImg {
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/8.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            background-attachment: fixed;
+            background-position: top;
+            filter: brightness(.5);
+        }
+
+        #midTitle {
+            position: sticky;
+            top: 30%;
+        }
+
+        #midTitle p {
+            width: 80%;
+            font-size: 150px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #fff;
+            background-color: #96ACB7;
+        }
+
+        nav {
+            width: 100%;
+            height: 90px;
+            background-color: #36558F;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        nav ul{
+            display: flex !important;
+            justify-content: center !important;
+        }
+
+        nav ul li{
+            font-size: 24px;
+            line-height: 90px;
+            list-style: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+        }
+
+        main {
+            width: 100%;
+            height: 3000px;
+            background-image: url(./images/Ai\ Hoshino.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #96ACB7;
+        }
+
+        #content-1, #content-3{
+            width: 100%;
+            height: 500px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        #content-2, #content-4{
+            width: 100%;
+            height: 250px;
+            background-color: #96ACB7;
+            text-align: justify;
+            position: relative;
+        }
+        
+        #txt p, #txt-2 p{
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 2px;
+            border: 5px solid #36558F;
+            padding: 15px;
+        }
+
+        #btn, #btn-2{
+            width: 200px;
+            height: 60px;
+            background-color: #36558F;
+            text-align: center;
+            color: #fff;
+            line-height: 60px;
+            font-size: 24px;
+            letter-spacing: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #contentImg, #contentImg-2{
+            width: 100%;
+            height: 100%;
+        }
+
+        #contentImg{
+            background-image: url(./images/9.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            filter: opacity(.5);
+        }
+        
+        #contentImg-2{
+            background-image: url(./images/Brunette\ Girl.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top center;
+            filter: opacity(.5);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="bottomImg"></div>
+        <div id="midTitle">
+            <p>Ocean</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li><a href="#">聯絡我們</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="content-1">
+            <div id="contentImg"></div>
+            <div id="btn">Hello World</div>
+        </div>
+
+        <div id="content-2">
+            <div id="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vel veritatis, voluptate dolorem
+                    velit doloribus officia cupiditate laudantium nisi corporis possimus rem quidem voluptatem, quae
+                    eligendi error nulla hic culpa!
+                </p>
+            </div>
+        </div>
+
+        <div id="content-3">
+            <div id="contentImg-2"></div>
+            <div id="btn-2">Scroll down</div>
+        </div>
+
+        <div id="content-4">
+            <div id="txt-2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vel veritatis, voluptate dolorem
+                    velit doloribus officia cupiditate laudantium nisi corporis possimus rem quidem voluptatem, quae
+                    eligendi error nulla hic culpa!
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

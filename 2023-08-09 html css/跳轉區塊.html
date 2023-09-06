@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #nav{
+            width: calc(100% - (10% * 2));
+            height: 80px;
+            position: fixed;
+            top: 10px;
+            z-index: 99;
+            padding: 0 10%;
+        }
+
+        #logo{
+            width: 60px;
+            height: 60px;
+            background-image: url(./images/picture\ 1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: left;
+        }
+
+        #nav ul{
+            height: calc(100% - 10px);
+            float: right;
+            padding-top: 10px;
+        }
+
+        #nav ul li{
+            width: 140px;
+            height: 40px;
+            background-color: rgb(26, 111, 209);
+            list-style: none;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 15px;
+            margin-right: 15px;
+            float: left;
+        }
+
+        #nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 3px;
+            font-weight: 400;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #nav ul li:hover{
+            background-color: #fff;
+        }
+
+        #nav ul li a:hover{
+            color: #000;
+        }
+
+        .container{
+            width: 80%;
+            height: 100vh;
+            position: relative;
+            top: 0;
+        }
+        
+        .banner{
+            width: 100%;
+            height: calc(100% - 50vh);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top center;
+            padding-top: 50vh;
+        }
+        
+        .banner-1{
+            background-image: url(./images/4.jpg);
+        }
+        .banner-2{
+            background-image: url(./images/5.jpg);
+        }
+        .banner-3{
+            background-image: url(./images/6.jpg);
+        }
+
+        .mask{
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            background-color: black;
+            opacity: .5;
+        }
+
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .go-top{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            position: fixed;
+            bottom: 5%;
+            right: 2%;
+            font-size: 20px;
+            color: rgb(1, 0, 82);
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 3px;
+            box-shadow: 0 5px 5px 1px #5c5c5c;
+        }
+
+        .triangle{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 5px 10px 5px;
+            border-color:transparent transparent rgb(1, 0, 82) transparent;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .go-top span{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 導覽列 -->
+    <div id="nav">
+        <a href="https://www.pinterest.com/search/pins/?q=anime%20wallpaper&rs=rs&eq=&etslf=1840" target="_blank">
+            <div id="logo"></div>
+        </a>
+        <ul>
+            <li><a href="#top">Section1</a></li>
+            <li><a href="#mid">Section2</a></li>
+            <li><a href="#bot">Section3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- 區塊一 -->
+        <div id="top" class="banner-1 banner">
+            <div class="mask">
+                <div class="btn">Button</div>
+            </div>
+        </div>
+        <!-- 區塊二 -->
+        <div id="mid" class="banner-2 banner">
+            <div class="mask">
+                <div class="btn">Button</div>
+            </div>
+        </div>
+        <!-- 區塊三 -->
+        <div id="bot" class="banner-3 banner">
+            <div class="mask">
+                <div class="btn">Button</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="go-top">
+            <div class="triangle"></div>
+            <span>Top</span>
+        </div>
+    </a>
+</body>
+</html>

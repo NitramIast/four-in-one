@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .loading-bar{
+            width: 300px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(86, 53, 4);
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            opacity: 0;
+            animation: loading-bar 5s;
+        }
+
+        .loading-bar::before{
+            content: "";
+            width: 45px;
+            height: 45px;
+            background-color: bisque;
+            border-radius: 25px;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            animation: loading 5s ease-in-out;
+        }
+
+        .wall {
+            width: 600px;
+            height: 600px;
+            position: relative;
+            background-image: url(./images/Pacman\ Blank\ Screen\ 2.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: login 35s 5s ease-in-out;
+        }
+
+        .doodle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(255, 251, 0);
+            position: absolute;
+            top: 19px;
+            left: 14px;
+            animation: doodle-move 30s 8s ease-in-out infinite;
+        }
+
+        .doodle-eye {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+
+        .doodle-ball {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 0);
+            position: absolute;
+            top: 19px;
+            left: 14px;
+            animation: doodle-move 30s 6.5s ease-in-out infinite;
+        }
+
+        @keyframes doodle-move {
+            0% {
+                top: 19px;
+                left: 14px;
+            }
+
+            5% {
+                top: 19px;
+                left: 225px;
+                transform: rotate(0deg);
+            }
+
+            6% {
+                transform: rotate(90deg);
+            }
+
+            10% {
+                top: 94px;
+                left: 225px;
+                transform: rotate(90deg);
+            }
+
+            11% {
+                transform: rotate(180deg);
+            }
+
+            15% {
+                top: 94px;
+                left: 110px;
+                transform: rotate(180deg);
+            }
+
+            16% {
+                transform: rotate(90deg);
+            }
+
+            20% {
+                top: 385px;
+                left: 110px;
+                transform: rotate(90deg);
+            }
+
+            21% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                top: 385px;
+                left: 230px;
+                transform: rotate(0deg);
+            }
+
+            26% {
+                transform: rotate(90deg);
+            }
+
+            30% {
+                top: 440px;
+                left: 230px;
+                transform: rotate(90deg);
+            }
+
+            31% {
+                transform: rotate(0deg);
+            }
+
+            35% {
+                top: 440px;
+                left: 400px;
+                transform: rotate(0deg);
+            }
+
+            36% {
+                transform: rotate(90deg);
+            }
+
+            40% {
+                top: 500px;
+                left: 400px;
+                transform: rotate(90deg);
+            }
+
+            41% {
+                transform: rotate(0deg);
+            }
+
+            45% {
+                top: 500px;
+                left: 498px;
+                transform: rotate(0deg);
+            }
+
+            46% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                top: 555px;
+                left: 498px;
+                transform: rotate(90deg);
+            }
+
+            51% {
+                transform: rotate(180deg);
+            }
+
+            55% {
+                top: 555px;
+                left: 18px;
+                transform: rotate(180deg);
+            }
+
+            56% {
+                transform: rotate(270deg);
+            }
+
+            60% {
+                top: 500px;
+                left: 18px;
+                transform: rotate(270deg);
+            }
+
+            61% {
+                transform: rotate(360deg);
+            }
+
+            65% {
+                top: 500px;
+                left: 111px;
+                transform: rotate(360deg);
+            }
+
+            66% {
+                transform: rotate(270deg);
+            }
+
+            70% {
+                top: 97px;
+                left: 111px;
+                transform: rotate(270deg);
+            }
+
+            71% {
+                transform: rotate(360deg);
+            }
+
+            75% {
+                top: 97px;
+                left: 497px;
+                transform: rotate(360deg);
+            }
+
+            76% {
+                transform: rotate(270deg);
+            }
+
+            80% {
+                top: 18px;
+                left: 497px;
+                transform: rotate(270deg);
+            }
+
+            81% {
+                transform: rotate(180deg);
+            }
+
+            85% {
+                top: 18px;
+                left: 285px;
+                transform: rotate(180deg);
+            }
+
+            86% {
+                transform: rotate(90deg);
+            }
+
+            90% {
+                top: 99px;
+                left: 285px;
+                transform: rotate(90deg);
+            }
+
+            91% {
+                transform: rotate(180deg);
+            }
+
+            95% {
+                top: 99px;
+                left: 18px;
+                transform: rotate(180deg);
+            }
+
+            96% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                top: 19px;
+                left: 14px;
+                transform: rotate(360deg);
+            }
+        }
+
+        .doodle::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent #0d0d0d transparent transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: mouth-move 1s ease-in-out infinite;
+        }
+
+        @keyframes mouth-move {
+            0% {
+                top: 50%;
+                transform: translateY(-50%);
+                border-width: 15px 15px 15px 0;
+            }
+
+            25% {
+                top: 50%;
+                transform: translateY(-50%);
+                border-width: 15px 15px 15px 0;
+            }
+
+            50% {
+                top: 50%;
+                transform: translateY(-50%);
+                border-width: 0 15px 0 0;
+            }
+
+            75% {
+                top: 50%;
+                transform: translateY(-50%);
+                border-width: 15px 15px 15px 0;
+            }
+
+            100% {
+                top: 50%;
+                transform: translateY(-50%);
+                border-width: 15px 15px 15px 0;
+            }
+        }
+
+        @keyframes login {
+            0%{
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            5%{
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+            
+        }
+
+        @keyframes loading-bar {
+            0%{
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            10%{
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            95%{
+                opacity: 1;
+                transform: scale(1);
+
+            }
+
+            100%{
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        @keyframes loading {
+            0%{
+                width: 45px;
+            }
+            25%{
+                width: 25%;
+            }
+            50%{
+                width: 50%;
+            }
+            75%{
+                width: 75%;
+            }
+            100%{
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading-bar">
+        <span>loading...</span>
+    </div>
+    <div class="wall">
+        <div class="doodle">
+            <div class="doodle-eye"></div>
+        </div>
+        <div class="doodle-ball"></div>
+    </div>
+</body>
+
+</html>

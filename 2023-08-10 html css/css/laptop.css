@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+}
+
+.all{
+    width: 1280px;
+    height: 100vh;
+    background-size: contain;
+    background-color: #F5f5f5;
+    /* background-image: url(../images/LINE_ALBUM_html-css_230810_2.jpg); */
+}
+
+nav{
+    width: 366px;
+    height: 100%;
+    position: relative;
+    float: left;
+    background-image: url(../images/newpapwe.jpeg);
+    backdrop-filter: brightness(50%);
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../images/logo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 2px #3F2305;
+
+}
+
+#menu{
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#menu a{
+    text-decoration: none;
+    
+}
+
+.menuBtn{
+    width: 150px;
+    height: 50px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    font-size: 28px;
+    color: #3F2305;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px 2px #3F2305;
+}
+
+#container{
+    width: calc(100% - 366px);
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.content{
+    width: 795px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img{
+    height: 50%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 2px #3F2305;
+
+}
+
+.img-X{
+    width: 100%;
+    height: calc(50% - 20px);
+    background-image: url(../images/bookstore.jpeg);
+    margin-bottom: 20px;
+    background-position: bottom 70% right 50%;
+}
+
+
+.img-Y{
+    background-position: bottom 15% right 50%;
+    background-image: url(../images/scooter.jpeg);
+    margin-right: 10px;
+}
+
+.img-Z{
+    background-image: url(../images/telephone.jpeg);
+    background-position: bottom 70% right 50%;
+    margin-left: 10px;
+
+}
+
+.img-Y, .img-Z{
+    width: calc(50% - 10px);
+
+}
+
+
+

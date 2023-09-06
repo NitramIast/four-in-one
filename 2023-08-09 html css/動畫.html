@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .loadingBar{
+            width: 300px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: bisque;
+            /* border: 3px solid #000; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .scrollBar{
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgb(133, 73, 7);
+            position: absolute;
+            left: 0;
+            animation: loading 10s infinite;
+        }
+
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #471f00;
+        }
+
+        @keyframes loading{
+            0%{
+                width: 40px;
+            }
+            25%{
+                width: 25%;
+            }
+            50%{
+                width: 50%;
+            }
+            75%{
+                width: 75%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="loadingBar">
+        <p>loading...</p>
+        <div class="scrollBar"></div>
+    </div>
+
+</body>
+</html>
